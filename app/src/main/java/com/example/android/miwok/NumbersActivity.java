@@ -29,21 +29,21 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("eight");
         words.add("nine");
         words.add("ten");
-//        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
-//
-//        ListView listView = (ListView) findViewById(R.id.list);
-//
-//        listView.setAdapter(itemsAdapter);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
 
-        final String TAG = "NumbersActivity";
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.RootView);
+        ListView listView = (ListView) findViewById(R.id.list);
 
-        for (String word: words){
-            //Log.v(TAG, "word "+word);
-            TextView wordView = new TextView(this);
-            wordView.setText(word);
-            rootView.addView(wordView);
-        }
+        listView.setAdapter(itemsAdapter);
+
+//        final String TAG = "NumbersActivity";
+//        LinearLayout rootView = (LinearLayout) findViewById(R.id.RootView);
+//
+//        for (String word: words){
+//            //Log.v(TAG, "word "+word);
+//            TextView wordView = new TextView(this);
+//            wordView.setText(word);
+//            rootView.addView(wordView);
+//        }
 
     }
 }
