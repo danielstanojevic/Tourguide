@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,9 +29,32 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+        //borrowed most of this from a post by ninosoft, but added check for null view:
+        //https://github.com/udacity/ud839_Miwok/commit/8fae046f71ed6be3756f2abb1b5452fbeb5a5618
+
+        //Set OnClick Listeners for each activity
+        setCustomOnClickListener(R.id.numbers, NumbersActivity.class);
+        setCustomOnClickListener(R.id.family, FamilyActivity.class);
+        setCustomOnClickListener(R.id.colors, ColorsActivity.class);
+        setCustomOnClickListener(R.id.phrases, PhrasesActivity.class);
     }
-    public void openNumbersList(View view) {
-        Intent i = new Intent(this, NumbersActivity.class);
-        startActivity(i);
+
+    public void setCustomOnClickListener(int resourceID, final Class className) {
+        // Find the View that shows the numbers category
+        View view = findViewById(resourceID);
+
+        // Set a click listener on that View
+        if (view != null) {
+            view.setOnClickListener(
+                    new View.OnClickListener() {
+                        // The code in this method will be executed when the respective View is clicked on.
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(view.getContext(), className);
+                            startActivity(intent);
+                        }
+                    });
+        }
     }
 }
