@@ -10,6 +10,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class PhrasesActivity extends AppCompatActivity {
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            releaseMediaPlayer();
+        }
+    };
+
     private MediaPlayer mMediaPlayer;
     /**
      * Clean up the media player by releasing its resources.
@@ -54,12 +61,7 @@ public class PhrasesActivity extends AppCompatActivity {
                 releaseMediaPlayer();
                 mMediaPlayer = MediaPlayer.create(PhrasesActivity.this, words.get(i).getAudioResourceId());
                 mMediaPlayer.start();
-                mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        releaseMediaPlayer();
-                    }
-                });
+                mMediaPlayer.setOnCompletionListener(mCompletionListener);
             }
         });
     }
