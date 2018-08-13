@@ -13,30 +13,7 @@ import android.media.AudioManager;
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
-    private MediaPlayer mMediaPlayer;
-    private AudioManager mAudioManager;
-    private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
-        @Override
-        public void onAudioFocusChange(int focusChange) {
-            if ((focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
-                    focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) &&
-                    mMediaPlayer != null) {
-                mMediaPlayer.pause();
-                mMediaPlayer.seekTo(0);
-            } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
-                mMediaPlayer.start();
-            } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-                releaseMediaPlayer();
-            }
-        }
-    };
 
-    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
-        @Override
-        public void onCompletion(MediaPlayer mp) {
-            releaseMediaPlayer();
-        }
-    };
 
     /**
      * Clean up the media player by releasing its resources.
