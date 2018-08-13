@@ -34,4 +34,7 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <color name="active_tab_text_color">#FFFFFF</color>
+    <color name="inactive_tab_text_color">#A8A19E</color>
 </resources>
