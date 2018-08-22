@@ -18,11 +18,11 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
-        <item name="actionBarStyle">@style/MiwokAppBarStyle</item>
+        <item name="actionBarStyle">@style/TourguideAppBarStyle</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <!-- Style for a category of vocabulary words -->
+    <!-- Style for a category of vocabulary attractions -->
     <style name="CategoryStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
@@ -37,7 +37,7 @@
         <item name="tabIndicatorColor">#0000FF</item>
     </style>
     <!-- App bar style -->
-    <style name="MiwokAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="TourguideAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <!-- Remove the shadow below the app bar -->
         <item name="elevation">0dp</item>
     </style>
