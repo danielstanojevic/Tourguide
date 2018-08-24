@@ -16,18 +16,50 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Welcome to Columbus, Ohio!</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
+    <!-- Category name for shopping -->
+    <string name="category_shopping">Shopping</string>
 
-    <!-- Category name for the vocabulary attractions for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
+    <!-- Category name for dining -->
+    <string name="category_dining">Dining</string>
 
-    <!-- Category name for the vocabulary attractions for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
+    <!-- Category name for coffee -->
+    <string name="category_coffee">Coffee</string>
 
-    <!-- Category name for the vocabulary attractions for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family</string>
+    <!-- Category name for activities -->
+    <string name="category_activities">Activities</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onelineaddress">745 N High St, Columbus, OH 43215</string>
+    <string name="oneline">One Line Coffee-Short North</string>
+    <string name="foxinthesnowaddress">1031 N 4th St, Columbus, OH 43201</string>
+    <string name="foxinthesnow">Fox in the Snow Cafe</string>
+    <string name="missionaddress">11 Price Ave, Columbus, OH 43201</string>
+    <string name="mission">Mission Coffee Co. LLC</string>
+    <string name="briosoaddress">14 E Gay St, Columbus, OH 43215</string>
+    <string name="brioso">Brioso Coffee</string>
+    <string name="image_content_description">attraction image</string>
+    <string name="play_button">play button</string>
+    <string name="easton_address">160 Easton Town Center, Columbus, Ohio 43219</string>
+    <string name="easton">Easton Town Center</string>
+    <string name="polaris_address">1500 Polaris Pkwy, Columbus, OH 43240</string>
+    <string name="polaris">Polaris Fashion Place</string>
+    <string name="tuttle_address">5043 Tuttle Crossing Blvd, Dublin, OH 43016</string>
+    <string name="tuttle">The Mall at Tuttle Crossing</string>
+    <string name="tanger_address">400 South Wilson Rd, Sunbury, OH 43074</string>
+    <string name="tanger">TangerOutlets</string>
+    <string name="northstar_address">951 N High St, Columbus, OH 43201</string>
+    <string name="northstar">Northstar Cafe</string>
+    <string name="deweys_address">1327 W 5th Ave, Columbus, OH 43212</string>
+    <string name="deweys">Dewey\'s Pizza</string>
+    <string name="hyde_park_address">569 N High St, Columbus, OH 43215</string>
+    <string name="hydepark">Hyde Park Prime Steakhouse</string>
+    <string name="milestone_address">229 S Civic Center Dr, Columbus, OH 43215</string>
+    <string name="milestone">Milestone 229</string>
+    <string name="hocking_hills_address">19852 OH-664, Logan, OH 43138</string>
+    <string name="scioto_mile_address">233 S Civic Center Dr, Columbus, OH 43215</string>
+    <string name="gallery_hop_address">986 N High St, Columbus, OH 43201</string>
+    <string name="hocking_hills">Hocking Hills</string>
+    <string name="scioto_mile">Scioto Mile</string>
+    <string name="gallery_hop">Short North Gallery Hop</string>
 </resources>

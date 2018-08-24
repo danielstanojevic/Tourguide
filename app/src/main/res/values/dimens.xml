@@ -15,5 +15,10 @@
 <resources>
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
+    <dimen name="icon">24dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="attraction_image_height">212dp</dimen>
+    <dimen name="attraction_description_height">44dp</dimen>
+    <dimen name="attraction_height">300dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
 </resources>

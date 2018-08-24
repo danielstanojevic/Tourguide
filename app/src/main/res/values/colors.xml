@@ -23,17 +23,17 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
-    <!-- Background color for the numbers category -->
-    <color name="category_numbers">#FD8E09</color>
+    <!-- Background color for the shopping category -->
+    <color name="category_shopping">#FD8E09</color>
 
-    <!-- Background color for the family members category -->
-    <color name="category_family">#379237</color>
+    <!-- Background color for the dining category -->
+    <color name="category_dining">#379237</color>
 
-    <!-- Background color for the colors category -->
-    <color name="category_colors">#8800A0</color>
+    <!-- Background color for the coffee category -->
+    <color name="category_coffee">#8800A0</color>
 
-    <!-- Background color for the phrases category -->
-    <color name="category_phrases">#16AFCA</color>
+    <!-- Background color for the activities category -->
+    <color name="category_activities">#16AFCA</color>
 
     <color name="active_tab_text_color">#FFFFFF</color>
     <color name="inactive_tab_text_color">#A8A19E</color>
